@@ -33,6 +33,12 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-style: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -77,6 +83,11 @@ h3 {
     flex-wrap: wrap;
 }
 
+.home-container {
+    background-color: #E0ECF5;
+    padding: 6em 0em;
+}
+
 .container-list {
     display: flex;
     flex-direction: column;
@@ -116,6 +127,14 @@ h3 {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.vertical-stacker-center-blue {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0ECF5;
+    padding-top: 3em;
 }
 
 .vertical-stacker-right {
