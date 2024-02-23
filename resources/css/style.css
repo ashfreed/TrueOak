@@ -123,6 +123,12 @@ h4 {
     padding: 0em 0em 0em 3em;
 }
 
+.vertical-stacker-reduced {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
 .vertical-stacker-center {
     text-align: center;
     display: flex;
@@ -151,6 +157,12 @@ h4 {
     justify-content: center;
     text-align: left;
     padding: 2em 15em 2em 15em;
+}
+
+.img-cap {
+    font-style: italic;
+    font-size: x-small;
+    text-wrap: wrap;
 }
 
 .index.image {
@@ -235,6 +247,15 @@ h4 {
     font-size: x-small;
 }
 
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 2em;
+    font-style: italic;
+    font-size: x-small;
+    text-align: end;
+}
+
 @media screen and (max-width: 400px) {
     .banner {
         min-height: 250px;
@@ -273,16 +294,33 @@ h4 {
 
 @media screen and (max-width: 400px) {
     .vertical-stacker {
-        padding: 2em 1em;
+        padding: 1em 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .vertical-stacker-reduced {
+        padding: 0em 1em;
         flex-wrap: wrap;
         align-items: center;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .vertical-stacker-right {
-        padding: 2em 1em;
+    .img-cap {
+        padding: 0em 1em;
         flex-wrap: wrap;
+        align-items: center;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .vertical-stacker-right {
+        padding: 1em 1.5em;
+        flex-wrap: wrap;
+        text-align: center;
         align-items: center;
     }
 }
