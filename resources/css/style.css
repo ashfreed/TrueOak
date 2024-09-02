@@ -246,17 +246,20 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     margin: 1em 2.5em;
-    font-style: italic;
     font-size: x-small;
 }
 
 .copyright {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em 2em;
-    font-style: italic;
+    margin: 1em 2.5em;
     font-size: x-small;
     text-align: end;
+}
+
+.terms {
+    margin-left: 0.5em;
+    color: #F9F9F9;
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
