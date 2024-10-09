@@ -80,12 +80,23 @@
                 <h1 class="who">Who We Work With</h1>
                 <p>Some of our clients include:</p>
             </div>
-            <div class='client-icon-set'>
+            <!-- <div class='client-icon-set'>
                 <img src="./resources/client_logos/Baza.png" class="client-icon" loading="">
                 <img src="./resources/client_logos/Ecotone.png" class="client-icon" loading="">
                 <img src="./resources/client_logos/DigitalX_resize.png" class="client-icon" loading="">
                 <img src="./resources/client_logos/spatium_logo_®_white_rgb_01.svg" class="client-icon" loading="">
-            </div>
+            </div> -->
+            <div class="viewing-container">
+                <div class="carousel">
+                    <img src="/resources/client_logos/Baza.png" alt="" class="client-logo">
+                    <img src="/resources/client_logos/DigitalX.png" alt="" class="client-logo">
+                    <img src="/resources/client_logos/Ecotone.png" alt="" class="client-logo">
+                    <img src="/resources/client_logos/spatium_logo_®_white_rgb_01.svg" alt="" class="client-logo spatium-logo">
+                </div>
+            <script>
+                    let copy = document.querySelector(".carousel").cloneNode(true);
+                    document.querySelector(".viewing-container").appendChild(copy);
+            </script>
         </section>
     </main>
 

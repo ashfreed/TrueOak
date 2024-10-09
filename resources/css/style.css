@@ -310,6 +310,66 @@ h4 {
     background-color:#00486D;
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.viewing-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 60px 0;
+    background-color:#F9F9F9;
+    white-space: nowrap;
+    position: relative;
+}
+
+.viewing-container:hover .carousel {
+    animation-play-state: paused;
+}
+
+.viewing-container::before,
+.viewing-container::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.viewing-container::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F9F9F9);
+}
+
+.viewing-container::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F9F9F9);
+}
+
+.carousel {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.client-logo {
+    max-height: 250px;
+    max-width: 200px;
+    margin: 0 50px;
+}
+
+.client-logo.spatium-logo {
+    height: 110px;
+}
+
 @media screen and (min-width: 200px) and (max-width: 800px) {
     .container {
         padding: 2em 1em;
