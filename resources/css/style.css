@@ -48,6 +48,7 @@ h4 {
     align-items: center;
     background-color: #00486D;
     padding: 0.5em;
+    overflow: hidden;
 }
 
 .nav.logo {
@@ -61,7 +62,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-.nav.link {
+.nav-link {
     text-decoration: none;
     color: #F9F9F9;
     padding: 0.5em 2em;
@@ -260,6 +261,53 @@ h4 {
 .terms {
     margin-left: 0.5em;
     color: #F9F9F9;
+}
+
+.dropdown .dropbtn.nav-link {
+    text-decoration: inherit;
+    color: #F9F9F9;
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+.drop-nav-link {
+    text-decoration: none;
+    color: #F9F9F9;
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#00486D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color:darkcyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a:hover {
+    background-color:#00486D;
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
