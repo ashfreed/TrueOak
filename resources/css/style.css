@@ -89,7 +89,7 @@ h4 {
 
 .home-container {
     background-color: #E0ECF5;
-    padding: 6em 0em;
+    padding: 2em 0em;
 }
 
 .container-list {
@@ -98,13 +98,15 @@ h4 {
     justify-content: center;
     padding: 6em 0em;  
     align-items: center;
+    background-color: #E0ECF5;
 }
 
 .container-center {
     display: flex;
     justify-content: center;
-    padding: 6em 0em;  
+    padding: 6em 0em 4em 0em;  
     flex-wrap: wrap;
+    background-color: #E0ECF5;
 }
 
 .horizontal-stacker {
@@ -177,7 +179,7 @@ h4 {
 }
 
 .who {
-    padding-top: 5em;
+    padding-top: 1em;
 }
 
 .client-icon-set {
@@ -185,13 +187,6 @@ h4 {
     justify-content:center;
     padding: 2em 0em 8em 0em;
     flex-wrap: wrap;  
-}
-
-.client-icon {
-    display: flex;
-    max-height: 80px;
-    max-width: 150px;
-    padding: 0em 2em;
 }
 
 .about.image {
@@ -204,6 +199,7 @@ h4 {
 .about-us-image {
     display: flex;
     height: 300px;
+    border-radius: 15px;
 }
 
 .footer-container {
@@ -322,14 +318,15 @@ h4 {
 }
 
 .viewing-container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
     padding: 60px 0px 130px 0px;
-    background-color:#F9F9F9;
+    background-color:#E0ECF5;
     white-space: nowrap;
     position: relative;
+    justify-content: center;
 }
 
 .viewing-container:hover .carousel {
@@ -348,27 +345,24 @@ h4 {
 
 .viewing-container::before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F9F9F9);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #E0ECF5);
 }
 
 .viewing-container::after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F9F9F9);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #E0ECF5);
 }
 
 .carousel {
-    display: inline-block;
-    animation: 16s slide infinite linear;
+    display: flex;
+    flex-direction: row;
+    animation: 25s slide infinite linear;
 }
 
 .client-logo {
-    max-height: 250px;
-    max-width: 200px;
+    max-height: 150px;
+    max-width: 250px;
     margin: 0 50px;
-}
-
-.client-logo.spatium-logo {
-    height: 110px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
@@ -395,7 +389,7 @@ h4 {
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
     .vertical-box {
-        padding: 1em;
+        padding: 1em 3em;
         flex-wrap: wrap;
     }
 }
@@ -452,7 +446,7 @@ h4 {
 
 @media screen and (min-width:801px) and (max-width: 1300px) {
     .vertical-box {
-        padding: 5em;
+        padding: 2em 5em;
         flex-wrap: wrap;
     }
 }
