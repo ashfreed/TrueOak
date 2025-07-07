@@ -338,7 +338,7 @@ h4 {
 .viewing-container::after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 450px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -360,10 +360,19 @@ h4 {
     animation: 25s slide infinite linear;
 }
 
-.client-logo {
-    max-height: 150px;
-    max-width: 250px;
+.logo-container {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
     margin: 0 50px;
+    box-sizing:content-box;
+}
+
+.client-logo {
+    display: flex;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
