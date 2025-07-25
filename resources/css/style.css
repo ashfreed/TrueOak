@@ -362,12 +362,13 @@ h4 {
 
 .logo-container {
     display: flex;
-    width: 250px;
+    width: 320px;
     height: 150px;
     align-items: center;
     justify-content: center;
     margin: 0 50px;
     box-sizing:content-box;
+    
 }
 
 .client-logo {
